@@ -1,0 +1,6 @@
+event,menu,date,groups,delivery,state,recorded
+E1,M2,2026-07-25,2,V1,shipped,2026-07-24
+E2,M1,2026-07-27,1,V2,confirmed,2026-07-20
+E3,M3,2026-07-26,2,V2,confirmed,2026-07-20
+E3,M3,2026-07-30,2,V3,delayed,2026-07-24
+E4,M2,2026-07-28,1,V2,confirmed,2026-07-21

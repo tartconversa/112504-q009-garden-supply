@@ -1,0 +1,5 @@
+scenario,shade,from_day,yield_factor
+S1,west,2026-07-23,0.45
+S1,east,2026-07-23,1.0
+S2,west,2026-07-23,0.8
+S2,east,2026-07-23,0.95

@@ -1,0 +1,5 @@
+menu,item,crop,kg_per_group,alternatives,max_storage_days,diet
+M1,main,greens,4,greens|chard,2,standard
+M1,side,roots,2,roots,4,standard
+M2,meal,greens,3,greens,1,standard
+M3,class,greens,2,greens|chard,3,flex

@@ -1,0 +1,10 @@
+batch,bed,crop,plant,first,last,kg,edible_kg,state
+H1,A,greens,2025-05-01,2025-06-02,2025-06-08,8,6,weighed
+H2,B,greens,2025-05-01,2025-06-03,2025-06-09,12,8,weighed
+H3,A,greens,2025-07-01,2025-08-05,2025-08-13,3,2,weighed
+H4,B,greens,2025-07-01,2025-08-07,2025-08-16,2,1,weighed
+H5,C,greens,2025-07-01,2025-08-05,2025-08-14,13,9,weighed
+H6,D,roots,2025-07-01,2025-08-16,2025-08-24,0,0,confirmed_none
+H7,A,greens,2026-06-12,2026-07-24,2026-07-29,,,pending
+H8,B,greens,2026-06-12,2026-07-25,2026-07-30,,,pending
+H9,D,roots,2026-06-11,2026-08-05,2026-08-10,,,pending
