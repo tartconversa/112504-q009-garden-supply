@@ -4,9 +4,9 @@ import unittest
 from pathlib import Path
 
 SAMPLES = Path(__file__).resolve().parents[1] / "samples"
-SCHEMAS = {'beds': ['bed', 'area', 'shade', 'irrigation', 'square_metres'], 'harvests': ['batch', 'bed', 'crop', 'plant', 'first', 'last', 'kg', 'edible_kg', 'state'], 'scenarios': ['scenario', 'shade', 'from_day', 'yield_factor'], 'menus': ['menu', 'item', 'crop', 'kg_per_group', 'alternatives', 'max_storage_days', 'diet'], 'events': ['event', 'menu', 'date', 'groups', 'delivery', 'state', 'recorded'], 'supplies': ['event', 'batch', 'kind', 'at', 'edible_kg', 'expires'], 'purchase': ['offer', 'crop', 'kg_pack', 'cost', 'arrival', 'expiry'], 'transport': ['delivery', 'leaves', 'arrives', 'kg_limit']}
-REFERENCES = [('harvests', 'bed', 'beds', 'bed'), ('events', 'menu', 'menus', 'menu'), ('supplies', 'batch', 'harvests', 'batch'), ('events', 'delivery', 'transport', 'delivery')]
-OBSERVED = [('events', 'event', 'E3', 2), ('harvests', 'crop', 'greens', 7), ('scenarios', 'scenario', 'S1', 2)]
+SCHEMAS = {'beds': ['bed', 'area', 'shade', 'irrigation', 'square_metres'], 'harvests': ['batch', 'bed', 'crop', 'plant', 'first', 'last', 'kg', 'edible_kg', 'state'], 'scenarios': ['scenario', 'shade', 'from_day', 'yield_factor'], 'menus': ['menu', 'item', 'crop', 'kg_per_group', 'alternatives', 'max_storage_days', 'diet'], 'events': ['event', 'menu', 'date', 'groups', 'delivery', 'state', 'recorded'], 'supplies': ['event', 'batch', 'kind', 'at', 'edible_kg', 'expires'], 'purchase': ['offer', 'crop', 'kg_pack', 'cost', 'arrival', 'expiry'], 'transport': ['delivery', 'leaves', 'arrives', 'kg_limit'], 'supply_ledger': ['issue', 'event', 'batch', 'crop', 'kg', 'packed', 'delivery'], 'service_policy': ['event', 'program', 'priority', 'can_change_menu']}
+REFERENCES = [('harvests', 'bed', 'beds', 'bed'), ('events', 'menu', 'menus', 'menu'), ('supplies', 'batch', 'harvests', 'batch'), ('events', 'delivery', 'transport', 'delivery'), ('supply_ledger', 'event', 'events', 'event'), ('supply_ledger', 'batch', 'harvests', 'batch'), ('supply_ledger', 'delivery', 'transport', 'delivery'), ('service_policy', 'event', 'events', 'event')]
+OBSERVED = [('events', 'event', 'E3', 2), ('harvests', 'crop', 'greens', 8), ('scenarios', 'scenario', 'S1', 2)]
 
 class Sources(unittest.TestCase):
     @classmethod

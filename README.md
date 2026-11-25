@@ -1,6 +1,6 @@
 # 共享菜园收成波动与活动供给
 
-重量为千克，保鲜以采收日期起的当地完整天数计。历史批次保留未成熟和已确认零收成两种状态。
+重量为千克，保鲜以采收日期起的当地完整天数计。历史批次保留未成熟和已确认零收成两种状态。 已装车实物依据发出明细扣除。活动表相同编号的两行体现期次调整，以记录日期区分。
 
 ## 资料
 
@@ -14,6 +14,8 @@ CSV 样例为合成记录，使用 UTF-8，首行为字段名。多值用竖线�
 - supplies.csv 的字段为 event、batch、kind、at、edible_kg、expires。
 - purchase.csv 的字段为 offer、crop、kg_pack、cost、arrival、expiry。
 - transport.csv 的字段为 delivery、leaves、arrives、kg_limit。
+- supply_ledger.csv 的字段为 issue、event、batch、crop、kg、packed、delivery。
+- service_policy.csv 的字段为 event、program、priority、can_change_menu。
 
 ## 运行资料检查
 

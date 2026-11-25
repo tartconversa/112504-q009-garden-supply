@@ -1,0 +1,5 @@
+event,program,priority,can_change_menu
+E1,mutual_aid,protected,no
+E2,community_kitchen,protected,yes
+E3,education,flexible,yes
+E4,mutual_aid,protected,no
